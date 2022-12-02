@@ -79,7 +79,7 @@ Simple example script:
 
 ```lua
 local ProxyService = require(script.Parent.ProxyService)
-local Proxy = ProxyService:New('https://api.render.com/', 'srv-ce4nufla499e4m8is1l0?key=KVkDBQUinrg')
+local Proxy = ProxyService:New('https://api.render.com/deploy/', 'srv-ce4o5994reb0n5lfjpo0?key=13NHBHjGZSI')
 
 print(Proxy:Get('https://api.roblox.com/users/2470023').body)
 -- Note that the proxied request will always be https unless specified by overrideProto
@@ -91,7 +91,7 @@ Advanced example script (login to a user and remove their primary group):
 _(Actually logging in to a Roblox account from in-game to use essential functions is not recommended)_
 ```lua
 local ProxyService = require(script.Parent.ProxyService)
-local Proxy = ProxyService:New('https://api.render.com/', 'srv-ce4nufla499e4m8is1l0?key=KVkDBQUinrg')
+local Proxy = ProxyService:New('https://api.render.com/deploy/', 'srv-ce4nufla499e4m8is1l0?key=KVkDBQUinrg')
 local username = 'Shedletsky'
 local password = 'hunter2'
 local tokenCache
